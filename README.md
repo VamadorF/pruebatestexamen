@@ -110,6 +110,20 @@ La app móvil está configurada con:
 - TypeScript
 - Componente simple que muestra "Hola mundo" centrado en pantalla
 
+## Subir a GitHub
+
+El repositorio local ya está inicializado con Git. Para subirlo a GitHub:
+
+1. Crea un nuevo repositorio en GitHub (https://github.com/new)
+2. No inicialices con README, .gitignore o licencia
+3. Ejecuta los siguientes comandos (reemplaza `TU_USUARIO` y `NOMBRE_REPO` con tus valores):
+
+```bash
+git remote add origin https://github.com/TU_USUARIO/NOMBRE_REPO.git
+git branch -M main
+git push -u origin main
+```
+
 ## Notas
 
 - Asegúrate de tener Node.js instalado antes de ejecutar los comandos
