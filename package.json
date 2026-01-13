@@ -1,0 +1,21 @@
+{
+  "name": "hola-mundo-nestjs-expo",
+  "version": "1.0.0",
+  "description": "Proyecto Hola Mundo con NestJS y React Native (Expo)",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install && cd backend && npm install && cd ../mobile && npm install",
+    "backend:install": "cd backend && npm install",
+    "backend:start": "cd backend && npm run start:dev",
+    "mobile:install": "cd mobile && npm install",
+    "mobile:start": "cd mobile && npm start"
+  },
+  "keywords": [
+    "nestjs",
+    "react-native",
+    "expo"
+  ],
+  "author": "",
+  "license": "ISC"
+}
+
