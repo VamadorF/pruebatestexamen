@@ -10,15 +10,14 @@ examen/
 │   ├── src/
 │   │   ├── main.ts
 │   │   ├── app.module.ts
-│   │   ├── app.controller.ts
-│   │   └── app.service.ts
+│   │   └── app.controller.ts
 │   ├── package.json
 │   └── tsconfig.json
 ├── mobile/          # Aplicación React Native con Expo
-│   ├── App.tsx
+│   ├── App.js
 │   ├── package.json
 │   ├── app.json
-│   └── tsconfig.json
+│   └── babel.config.js
 ├── package.json     # Scripts para gestionar ambos proyectos
 └── README.md
 ```
@@ -83,14 +82,14 @@ Esto iniciará el servidor de desarrollo de Expo. Podrás:
 ### Frontend
 - **React Native** - Framework para desarrollo móvil multiplataforma
 - **Expo** - Herramientas y servicios para React Native
-- **TypeScript** - Superset tipado de JavaScript
+- **JavaScript** - Lenguaje de programación (sin TypeScript)
 
 ## Características
 
 - ✅ Backend NestJS con endpoint "Hola mundo"
-- ✅ CORS habilitado para conexiones desde la app móvil
 - ✅ App React Native con Expo mostrando "Hola mundo"
-- ✅ Configuración TypeScript en ambos proyectos
+- ✅ Configuración mínima y simplificada
+- ✅ TypeScript solo en backend (mobile usa JavaScript puro)
 - ✅ Scripts de gestión en el monorepo
 
 ## Desarrollo
@@ -100,15 +99,17 @@ Esto iniciará el servidor de desarrollo de Expo. Podrás:
 El backend está configurado con:
 - Hot reload en modo desarrollo (`start:dev`)
 - Endpoint GET `/` que retorna el mensaje "Hola mundo"
-- CORS habilitado para permitir conexiones desde cualquier origen
+- Configuración TypeScript mínima esencial
+- Sin archivos opcionales (nest-cli.json eliminado)
 
 ### Mobile
 
 La app móvil está configurada con:
 - Expo SDK 49
 - React Native 0.72
-- TypeScript
+- JavaScript puro (sin TypeScript)
 - Componente simple que muestra "Hola mundo" centrado en pantalla
+- Configuración mínima necesaria
 
 ## Subir a GitHub
 
